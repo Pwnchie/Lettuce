@@ -10,16 +10,33 @@
 </head>
 <body>
 <h1>Register with Lettuce</h1>
-<form>
-    Choose a username:<br>
-    <input type="text" name="username"><br>
-    Enter a valid e-mail adress:<br>
-    <input type="email" name="e-mail"><br>
-    Choose a password:<br>
-    <input type="password" name="password"><br>
-    Repeat password:<br>
-    <input type="password" name="passwordrepeat"<br><br><br>
-    <input type="submit" value="Submit">
+<!--Insert action commands for form
+    Inside tag add action tags
+    action="action_page" method="post" -->
+<form autocomplete="on">
+    <fieldset>
+        Choose a username:<br>
+        <input type="text" name="username" autofocus required
+               placeholder="Type username here"><br>
+
+        Enter a valid e-mail adress:<br>
+        <input type="email" name="e-mail" required
+               placeholder="youremail@yomail.com"><br>
+
+        Choose a password:<br>
+        <input type="password" name="password" required
+               placeholder="Enter a secret password"><br>
+
+        Repeat password:<br>
+        <input type="password" name="passwordrepeat" autocomplete="off"
+               placeholder="Repeat your password" required><br><br>
+
+        <input type="submit" value="Submit"><br><br>
+    </fieldset>
 </form>
+<p>
+    If you already have a login, you can
+    <a href="lettucelogin.html">login here</a>
+</p>
 </body>
 </html>

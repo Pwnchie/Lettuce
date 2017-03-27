@@ -1,11 +1,43 @@
+/* Recommended to maintain backwards compatability
+ with non HTML5 compliant browsers*/
+#header, section, footer, aside, nav, main, article, figure
+{
+    display: block;
+}
+
+/* Styling for the Login button on the landing site */
 #login
 {
     float:left;
     margin-left:33%;
 }
 
+/* Styling for the Login button on the landing site */
 #register
 {
     float:right;
     margin-right:33%
+}
+
+#body
+{
+    font-family: "Lucida Console";
+    background: #c4e9ff;
+}
+
+#nav
+{
+    float:left;
+    padding: 10%;
+    margin-left:5%;
+}
+
+#h1
+{
+
+}
+
+#p
+{
+
 }
