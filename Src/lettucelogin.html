@@ -7,9 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lettuce Login</title>
     <link rel="stylesheet" href="lettucestylesheet.css">
+    <script src="lettucescripts.js"></script>
+
 </head>
 <body>
-<h1>Login to Lettuce</h1>
-<!-- needs login -->
+<nav>
+    <a href="lettuceregister.html">Register</a>
+</nav>
+<header><h1>Login to Lettuce</h1></header>
+<!-- errors message activated by wrong input -->
+<p id="inputerror" style="color:red"></p>
+
+<form id="loginform">
+    <p>Please enter your username</p>
+    <input type="text" name="username" autofocus required
+           placeholder="Enter username here"> <br>
+
+    <p>Please enter your password</p>
+    <input type="password" name="password" required
+           placeholder="Enter password here"><br><br>
+</form>
+
+<!-- A temporary button that calls a function to check
+    hardcoded username and password -->
+<button name="submit" type="button" onclick= "inputReader()">
+    Submit
+</button>
+
+<p id="outputtester"> </p>
+
+<p>
+    If you do not have a lettuce login, click
+    <a href="lettuceregister.html">register</a> to do so.
+</p>
 </body>
 </html>
